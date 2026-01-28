@@ -1,0 +1,103 @@
+/* Hero Section */
+.hero {
+    height: 85vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--secondary-color);
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.9), rgba(50, 50, 50, 0.8));
+    /* Fallback if image fails */
+}
+
+/* Background Image Layer */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Use the variable set in inline style, or fallback */
+    background-image: var(--hero-bg);
+    background-size: cover;
+    background-position: center;
+
+    /* Opacity to ensure text readability vs the bright photo */
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: var(--spacing-lg);
+
+    /* Glass Effect */
+    background: rgba(255, 255, 255, 0.1);
+    /* Slightly more visible */
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 16px;
+    /* Added rounded corners */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: var(--font-heading);
+    margin-bottom: var(--spacing-md);
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-lg);
+    font-weight: 500;
+    color: #f0f0f0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+    color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
