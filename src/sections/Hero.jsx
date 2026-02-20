@@ -20,7 +20,7 @@ const Hero = () => {
             }}
         >
             <div className="hero-content">
-                <h1>Benvenuti da Ottica Milena</h1>
+                <h1>Benvenuti da Ottica Milena, SITO IN COSTRUZIONE, non provare una transazione grazie.</h1>
                 <p>Il tuo sguardo, la nostra passione. Scopri la nostra collezione di occhiali unici.</p>
                 <Link to="/occhiali" className="cta-button">Scopri la Collezione</Link>
             </div>

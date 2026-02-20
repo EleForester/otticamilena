@@ -9,7 +9,7 @@ export async function createOrder({ customer, cartItems, total_cents, currency }
     const { data: order, error: orderError } = await supabase
         .from("orders")
         .insert({
-            status: "new",
+            status: customer.status || "new",
             customer_name: customer.customer_name,
             email: customer.email,
             phone: customer.phone || null,

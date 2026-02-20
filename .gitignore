@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Variables d'environnement - NE JAMAIS POUSSER SUR GITHUB
+.env
+.env.*
+!.env.example

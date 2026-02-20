@@ -17,10 +17,12 @@
   --glass-border: rgba(255, 255, 255, 0.2);
 
   /* Fonts */
-  --font-heading: 'Playfair Display', serif;
+  --font-heading: 'Gellio', sans-serif;
   /* Elegant, artistic */
   --font-body: 'Montserrat', sans-serif;
   /* Clean, modern */
+  --font-gellio: 'Gellio', sans-serif;
+  /* Custom font */
 
   /* Spacing */
   --spacing-sm: 8px;

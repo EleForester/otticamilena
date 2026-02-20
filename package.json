@@ -1,5 +1,5 @@
 {
-  "name": "antigravityprojetcs",
+  "name": "otticamilenaproject",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^5.5.0",
+    "@stripe/stripe-js": "^8.6.4",
     "@supabase/supabase-js": "^2.91.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -25,6 +27,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "supabase": "^2.76.10",
     "vite": "^7.2.4"
   }
 }

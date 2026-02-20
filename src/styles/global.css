@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap');
 @import './variables.css';
 
+@font-face {
+    font-family: 'Gellio';
+    src: url('../assets/fonts/GELLIO.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
