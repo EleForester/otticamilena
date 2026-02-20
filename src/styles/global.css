@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap');
-@import './variables.css';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap");
+@import "./variables.css";
 
 @font-face {
-    font-family: 'Gellio';
-    src: url('../assets/fonts/GELLIO.otf') format('opentype');
+    font-family: "Gellio";
+    src: url("../assets/fonts/GELLIO.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -41,6 +41,18 @@ h6 {
     /* Adjust based on footer height */
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
 }
 
 a {

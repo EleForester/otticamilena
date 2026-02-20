@@ -83,9 +83,29 @@
 @media (max-width: 768px) {
     .product-detail-container {
         flex-direction: column;
+        padding: var(--spacing-lg) var(--spacing-sm);
     }
 
     .detail-image {
-        min-height: 300px;
+        min-height: 280px;
+        width: 100%;
+    }
+
+    .detail-info .price {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .detail-image {
+        min-height: 220px;
+    }
+
+    .detail-info .actions {
+        flex-direction: column;
+    }
+
+    .secondary-button {
+        text-align: center;
     }
 }

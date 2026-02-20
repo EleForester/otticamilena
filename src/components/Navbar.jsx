@@ -31,7 +31,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="navbar-toggle" onClick={toggleMenu}>
+                <div className={`navbar-toggle ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
                     <span className="bar"></span>
                     <span className="bar"></span>
                     <span className="bar"></span>

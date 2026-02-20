@@ -62,3 +62,17 @@
 .contact-form button:hover {
     background-color: #21867a;
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .contact-info,
+    .contact-form {
+        min-width: 0;
+        width: 100%;
+    }
+}
